@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandeiras com JS</title>
+    
+    <link rel="shortcut icon" href="/img/favicon.png">
+    
+    <link rel="stylesheet" href="/Aulas/css/bandeiras.css">
+</head>
+<body>
+    <h1>Descubra o nome das bandeiras</h1>
+
+    <div  class="carrossel">
+        <h3 class="titulo-bloco">Role o Scroll do mouse</h3>
+        <div class="imgs">
+            <img onclick="mostrar('Brasileira')" src="/Aulas/img/brasil.png" alt="Bandeira do Brails">
+            <img onclick="mostrar('Estadunidense')" src="/Aulas/img/estados-unidos.png" alt="Bandeira dos Estados unidos">
+            <img onclick="mostrar('Italiana')" src="/Aulas/img/italia.png" alt="Bandeira da Italia">
+            <img onclick="mostrar('Portuguesa')" src="/Aulas/img/portugal.png" alt="Bandeira de Portugal ">
+            <img onclick="mostrar('Inglesa')" src="/Aulas/img/reino-unido.png" alt="Bandeira do Reuno Unido">
+            <img onclick="mostrar('Suiça')" src="/Aulas/img/suiça.webp" alt="Bandeira da Suiça">
+        </div>
+    </div>
+
+
+    <div class="modal" id="fechar">
+        <div class="invisivel" >
+        </div>
+    </div>
+
+    <script src="/Aulas/js/bandeiras.js"></script>
+</body>
+</html>

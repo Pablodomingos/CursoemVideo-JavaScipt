@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*::-webkit-scrollbar{  
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track{
+    background: #dfe6e9;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: #636e72;
+    border: 1px solid #dfe6e9;
+    border-radius: 5px;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: rgb(16, 127, 192);
+    font: normal 2rem Arial;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    display: grid;
+    justify-items: center;
+}
+
+.titulo{
+    margin: 5vh 0;
+}
+
+.titulo:hover::after{
+    content: ' Olá Pablo';
+}
+
+.bloco1{
+    width: 50vw;
+    height: 60vh;
+    background-color: brown;
+    margin-bottom: 10vh;
+}
+
+.bloco1, .bloco2{
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+.bloco2{
+    width: 50vw;
+    height: 50vh;
+    background-color: whitesmoke;
+}
+
+.bloco-hamburguer{
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    /* background-color: slategrey; */
+}
+
+li{
+    background-color: violet;
+    margin: 10px;
+    width: 50px;
+    height: 8px;
+    appearance: auto;
+    transition: 0.5s ease;
+}
+.bloco-hamburguer:hover > .l2{
+    background: transparent;
+}
+
+.bloco-hamburguer:hover > .l1{
+    /* transition: 0.5s ease-in-out;  */
+    top: 15px;
+    position: relative;
+    -webkit-transform: rotateZ(44deg) scaleX(1) translate(4px, 0px);
+}
+
+.bloco-hamburguer:hover > .l3{
+    /* transition: 0.5s ease-in; */
+    top: -15px;
+    position: relative;
+    -webkit-transform: rotateZ(-44deg) scaleX(1) translate(4px, -1px);
+}
+
+.bloco-extra{
+    width: 100%;
+    max-height: 100%;
+    background-color: black;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    overflow: auto;
+    display: grid;
+}
+
+.bloco-extra::-webkit-scrollbar{
+    background-color: pink;
+    width: 5px;
+    border-radius: 7px;
+    /* display: none; */
+}
+
+.bloco-extra::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: 7px;
+}
+
+.p-extra{
+    opacity: 0;
+}
+
+.bloco-hamburguer:hover > .bloco-extra > .p-extra{
+    color: white;
+    display: initial;
+    opacity: 1;
+}
+
+.bloco-hamburguer:hover > .bloco-extra{
+    top: 63px;
+    opacity: 1;
+}
+
+.bloco-hamburguer:hover > .bloco-extra > .p-extra, .bloco-hamburguer:hover > .bloco-extra, .p-extra, .bloco-extra{
+    transition: 0.4s ease-in-out;
+    border-radius: 3px;
+}
+

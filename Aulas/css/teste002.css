@@ -1,0 +1,75 @@
+body {
+  display: grid;
+  justify-items: center;
+}
+
+h1 {
+  display: inline-block;
+  background-color: cornflowerblue;
+}
+
+h1::first-letter {
+  color: chartreuse;
+  font-size: 40px;
+}
+
+::selection{
+    background-color: darkgreen;
+}
+
+h1:hover::before {
+  content: "Pablo ";
+  background: cornflowerblue;
+}
+
+h1::first-line {
+  background: cornflowerblue;
+}
+
+::placeholder{
+    font: italic bold 14px Arial;
+    color: darkslategray;
+}
+
+li{
+    font-size: 40px;
+}
+
+li:hover::marker{
+    color: darkturquoise;
+    font-size: 40px;
+}
+
+p::spelling-error{
+    text-decoration: wavy red;
+}
+
+#outro ~ .outro-assunto{
+    display: none;
+}
+
+#outro:checked ~ .outro-assunto{ /* Após inputs com atributo value="outro" e que estão checados, seleciona os irmãos do tipo input */
+    display: inline; /* renderiza esses irmãos como elementos em linha */
+}
+
+video {
+  height: 50vh;
+  max-width: 100%;
+  display: block;
+}
+
+video::cue {
+  color: black;
+  font-size: 20px;
+  line-height: 80px;
+  background: white;
+  text-shadow: 0 0 10px black;
+}
+
+video::cue i {
+  font-style: italic;
+}
+
+video::cue(v) {
+  color: yellow;
+}

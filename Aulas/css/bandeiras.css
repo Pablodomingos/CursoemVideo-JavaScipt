@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;    
+}
+
+body{
+    background-color: rgb(16, 127, 192);
+    font: normal 1.5em Arial;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: -2px 3px 4px rgba(0, 0, 0, 0.418);
+    display: grid;
+    justify-items: center;
+    margin-top: 2vh;
+}
+
+div.carrossel{
+    overflow: hidden;
+    background-color: beige;
+    padding: 8vh 2vh;
+    margin: 3vh 5vw;
+    border-radius: 20px;
+}
+
+.titulo-bloco{
+    color: rgb(16, 127, 192);
+    font: italic bold 1.5em Arial;
+    margin: -4vh 0 3vh 0;
+}
+
+.imgs{
+    display: flex;
+    width: 80vw;
+    height: 60vh;
+    transition: 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+img{
+    transition: 0.2s ease-in-out;
+    object-fit: cover;
+    min-width: 77vw;
+    min-height: 50vh;
+    margin: 2vh 2vw;
+}
+
+img:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+}
+
+.modal{
+    background: rgba(0, 0, 0, 0.3);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+}
+
+.invisivel{
+    width: 70vw;
+    height: 50vh;
+    background-color: #2e86de;
+    position: absolute;
+    top: 20vh;
+    left: 16vw;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.modal{
+    display: none;
+}
+
+.paragrafo-modal{
+    font-size: 3em;
+    margin: 15vh 10vw;
+    transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 600px){
+    .paragrafo-modal{
+        font-size: 2em;
+        margin: 15vh 5vw;
+    }
+}
+
+
+@media screen and (max-height:  500px){
+    .paragrafo-modal{
+        font-size: 2em;
+        margin: 6vh 5vw;
+    }
+}
