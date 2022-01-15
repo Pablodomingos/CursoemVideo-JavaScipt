@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercicios</title>
+
+    <link rel="stylesheet" href="/Exercicios/css/guanabara.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Hora do dia</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Ano de Nascimento: 
+                <input type="number" name="txtano" id="txtano" min="0" placeholder="Digite o ano aqui!">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="txtsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+
+                <input type="radio" name="txtsex" id="fem">
+                <label for="fen">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+
+    <script src="/Exercicios/js/guanabara.js"></script>
+</body>
+</html>

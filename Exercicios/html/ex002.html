@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade - JS</title>
+
+    <link rel="stylesheet" href="/Exercicios/css/ex002.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+
+    <section>
+        <div class="entradas">
+            <h3 class="sexo">Sexo</h3>
+            <input type="radio" name="sexo" id="masculino" onclick="sexo(this)" value="m">
+            <label for="masculino">Masculino</label>
+            
+            <input type="radio" name="sexo" id="feminino" onclick="sexo(this)" value="f">
+            <label for="feminino">Feminino</label>
+
+            <div class="anoIdade">
+                <label for="anoIdade"><h3>Ano do Nascimento: </h3></label>
+                <input type="number" id="anoIdade" placeholder="Digite aqui...">
+
+                <button class="btn" type="submit">Verificar</button>
+            </div>
+        </div>
+
+        <div class="resultado">
+            <h5>Preencha os dados acima para ver o resultado!</h5>
+            <img src="" alt="Imagem de pessoas">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+
+    <script src="/Exercicios/js/ex002.js"></script>
+</body>
+</html>

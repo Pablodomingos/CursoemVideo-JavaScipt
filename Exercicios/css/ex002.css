@@ -1,0 +1,134 @@
+:root{
+    --cor-background-top: #20bf6b;
+    --cor-background-bottom: #0fb9b1;
+    --shadow: rgba(0, 0, 0, 0.493);
+    --cor-copy: white;
+    --cor-after: #3ae374;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-background-top);
+}
+
+body{
+    transition: 1s ease;
+    font: normal 300 2rem 'Bebas Neue', cursive;
+    display: grid;
+    justify-items: center;
+    background: linear-gradient(to bottom, var(--cor-background-bottom) 30%, var(--cor-background-top));
+}
+
+header{
+    margin: 2vh 1vw 0 1vw;
+    color: var(--cor-after);
+    position: relative;
+}
+
+header::after{
+    content: ' ';
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background: var(--cor-after);
+}
+
+section{
+    width: 500px;
+    background: white;
+    box-shadow: 3px 3px 13px var(--shadow);
+    border-radius: 10px;
+    margin: 3vh 0;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    font-family: Arial;
+    color: var(--cor-copy);
+}
+
+footer, header{
+    text-shadow: -3px 3px 3px var(--shadow);
+}
+
+/* -- Media -- */
+
+@media(max-width: 650px){
+    section{
+        width: 80vw;
+    }
+}
+
+@media (max-width: 450px) {
+
+}
+
+/* --Estilização do exercicio-- */
+input[type='radio']:checked + label ~ .anoIdade{
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    transition: 1s ease-in-out;
+}
+
+.anoIdade{
+    opacity: 0;
+    display: none;
+}
+
+.anoIdade > label{
+    font-size: 1.7rem;
+}
+
+.anoIdade > input{
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 10px var(--shadow);
+    padding: 0 0 0 10px;
+    font: normal bold 1rem Arial;
+    height: 40px;
+}
+
+.anoIdade > input::placeholder{
+    font: normal 500 1rem Arial;
+}
+
+.entradas{
+    width: 100%;
+}
+
+img{
+    display: none;
+}
+
+.resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btn{
+    background: var(--cor-background-top);
+    border: none;
+    border-radius: 4px;
+    padding: 0 5px;
+    font: normal 400 1rem Arial;
+    height: 40px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 1px 2px 5px var(--shadow);
+}
